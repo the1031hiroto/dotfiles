@@ -76,7 +76,7 @@ else
   alias ls='ls -Fv --color'  # Linux
 fi
 alias ll='ls -l'
-alias la='ls -a'
+alias la='ls -la'
 
 alias be='bundle exec'
 
