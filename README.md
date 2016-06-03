@@ -13,8 +13,9 @@ git clone git@github.com:shuji-koike/dotfiles.git ~/.dotfiles
 ## link!
 
 ```
-# rm .gitignore .screenrc .tmux.conf .vim .vimrc .zshrc
+# rm .gitconfig .gitignore .screenrc .tmux.conf .vim .vimrc .zshrc
 
+ln -s .dotfiles/git/.gitconfig
 ln -s .dotfiles/git/.gitignore
 ln -s .dotfiles/screen/.screenrc
 ln -s .dotfiles/tmux/.tmux.conf
