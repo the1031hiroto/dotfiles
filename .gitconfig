@@ -1,0 +1,38 @@
+[include]
+	path = .gitconfig.local
+[core]
+	excludesfile = ~/.gitignore
+	editor = vim -c \"set fenc=utf-8\"
+[color]
+	ui = auto
+[push]
+	default = current
+[difftool]
+	prompt = false
+[mergetool]
+	prompt = false
+[alias]
+	f = fetch
+	m = merge
+	p = pull
+	c = commit
+	st = status
+	bl = branch -a
+	co = checkout
+	df = difftool
+	sl = stash list
+	amend = commit --amend
+	cp = cherry-pick
+	pop = stash pop
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
+[filter "hawser"]
+	clean = git hawser clean %f
+	smudge = git hawser smudge %f
+	required = true
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
