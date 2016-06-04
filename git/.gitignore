@@ -1,6 +1,27 @@
 .DS_Store
 *.swp
+.nfs*
 
 #--
 
+.java-version
+.scala-version
+.sbt-version
+
+#--
+
+vender/bundle
 node_modules
+
+#--
+
+*.prj
+*.csv
+
+#--
+
+*.jpg
+*.png
+*.gif
+*.ai
+*.pdf

@@ -24,6 +24,8 @@
 	amend = commit --amend
 	cp = cherry-pick
 	pop = stash pop
+	wip = commit -a -m \"[ci skip] WIP WIP WIP WIP WIP\"
+	re = reset --soft HEAD~
 [filter "media"]
 	required = true
 	clean = git media clean %f
