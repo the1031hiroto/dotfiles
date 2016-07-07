@@ -16,10 +16,13 @@
 	m = merge
 	p = pull
 	c = commit
+	r = rebase
+	l = log
 	st = status
 	bl = branch -a
 	co = checkout
 	df = difftool
+	mm = merge master
 	sl = stash list
 	amend = commit --amend
 	cp = cherry-pick
