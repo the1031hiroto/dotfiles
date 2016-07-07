@@ -1,3 +1,6 @@
+export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/libexec:$PATH"
+
 if [ -e /etc/profile ] ; then
   . /etc/profile
 fi
@@ -75,8 +78,9 @@ if [ 'Darwin' = $(uname -s) ]; then
 else
   alias ls='ls -Fv --color'  # Linux
 fi
-alias ll='ls -l'
-alias la='ls -la'
+alias ll='ls -lh'
+alias la='ls -lah'
+alias lR='ls -lahR'
 
 alias be='bundle exec'
 
@@ -156,6 +160,12 @@ fi
 if [ -d "${HOME}/.svm/current" ]; then
   export SCALA_HOME="${HOME}/.svm/current/rt"
   export PATH="${SCALA_HOME}/.svm/current/rt/bin:${PATH}"
+fi
+
+# jEnv
+if which jenv > /dev/null; then
+  export JENV_ROOT=/usr/local/opt/jenv
+  eval "$(jenv init -)"
 fi
 
 if [ -d ${HOME}/.scalaenv ]; then
