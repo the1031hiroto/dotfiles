@@ -26,3 +26,5 @@ ln -s .dotfiles/zsh .zsh
 ```
 
 ## that's it!
+
+:trollface:
