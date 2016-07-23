@@ -181,7 +181,7 @@ if [ -d "${HOME}/.svm/current" ]; then
 fi
 
 # jEnv
-if which -s jenv; then
+if which jenv > /dev/null 2>&1; then
   export JENV_ROOT=/usr/local/opt/jenv
   eval "$(jenv init -)"
 fi
