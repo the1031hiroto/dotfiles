@@ -26,6 +26,7 @@
 	sl = stash list
 	amend = commit --amend
 	cp = cherry-pick
+	pf = push -f
 	pop = stash pop
 	wip = commit -a -m \"[ci skip] WIP WIP WIP WIP WIP\"
 	re = reset --soft HEAD~
