@@ -1,5 +1,8 @@
+export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/libexec:$PATH"
+export PATH="/usr/local/mysql/bin:$PATH"
+export PATH="/usr/local/mysql/support-files:$PATH"
 
 if [ -e /etc/profile ] ; then
   . /etc/profile
@@ -102,6 +105,9 @@ fi
 alias ll='ls -lh'
 alias la='ls -lah'
 alias lR='ls -lahR'
+
+alias g=git
+alias d=docker
 
 alias be='bundle exec'
 

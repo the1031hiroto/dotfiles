@@ -21,8 +21,9 @@ ln -s .dotfiles/screen/.screenrc
 ln -s .dotfiles/tmux/.tmux.conf
 ln -s .dotfiles/vim/.vim
 ln -s .dotfiles/vim/.vimrc
-ln -s .dotfiles/zsh/.zshrc
 ln -s .dotfiles/zsh .zsh
+ln -s .zsh/.zshrc
+ln -s .zsh/.zshrc.local
 ```
 
 ## that's it!
