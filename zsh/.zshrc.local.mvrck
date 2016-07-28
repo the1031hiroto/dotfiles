@@ -1,7 +1,7 @@
-export DOCKER_TLS_VERIFY="1"
-export DOCKER_HOST="tcp://192.168.99.100:2376"
-export DOCKER_CERT_PATH="~/.docker/machine/machines/default"
-export DOCKER_MACHINE_NAME="default"
+# Run this command to configure your shell:
+eval $(docker-machine env)
+
+export DOCKER_MACHINE_IP=$(docker-machine ip default)
 
 #--
 
@@ -25,4 +25,6 @@ export AUD_REDIS_PORT=7000
 export BUDGET_REDIS_PORT=7000
 export TEST_REDIS_PORT=7000
 
-export HIVE_CONNECTION_STRING=jdbc:hive2://hivedocker:10000/default/
+export HIVE_CONNECTION_STRING=jdbc:hive2://$DOCKER_MACHINE_IP:10000/default/
+
+export MVRCK_WEBSITE_HOSTNAME=$DOCKER_MACHINE_IP
