@@ -5,9 +5,21 @@ export DOCKER_MACHINE_IP=$(docker-machine ip default)
 
 #--
 
+export SBT_OPTS="-XX:+CMSClassUnloadingEnabled -XX:PermSize=512m -XX:MaxPermSize=512m -Xms1024m -Xmx2048m -Xss256M"
+export PLAY_OPTS="-XX:+CMSClassUnloadingEnabled -XX:PermSize=2048m -XX:MaxPermSize=2048m -Xms1024m -Xmx4096m -Xss512M"
+export JAVA_OPTS=-Xss256M
+
 export PLAY_DB_URL="jdbc:mysql://127.0.0.1:3305/fractale"
 export PLAY_DB_USER="fractale"
 export PLAY_DB_PASS="ZQvU3pkGysk*,6sV"
+
+export TEST_DB_URL="jdbc:mysql://127.0.0.1/sphere_test"
+export TEST_DB_USER="sphere_test"
+export TEST_DB_PASS="sphere_test"
+
+export AUTH_DB_URL="jdbc:mysql://127.0.0.1/sphere_auth"
+export AUTH_DB_USER="sphere_auth"
+export AUTH_DB_PASS="sphere_auth"
 
 export BATCH_DB_URL="jdbc:mysql://127.0.0.1:3306/fractale"
 export BATCH_DB_USER=root
@@ -20,6 +32,10 @@ export RDB_BRIEF_DB_PASS=root
 export URCA_DB_URL="jdbc:mysql://127.0.0.1:3304/urca_dev"
 export URCA_DB_USER="urca"
 export URCA_DB_PASS="qO29NmmSwdqJyQN"
+
+export RDBCACHE_DB_URL="jdbc:mysql://127.0.0.1:3305/fractale"
+export RDBCACHE_DB_USER="fractale"
+export RDBCACHE_DB_PASS="ZQvU3pkGysk*,6sV"
 
 export AUD_REDIS_PORT=7000
 export BUDGET_REDIS_PORT=7000
