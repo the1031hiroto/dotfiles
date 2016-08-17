@@ -46,3 +46,5 @@ export HIVE_CONNECTION_STRING=jdbc:hive2://$DOCKER_MACHINE_IP:10000/default/
 export MVRCK_WEBSITE_HOSTNAME=$DOCKER_MACHINE_IP
 
 export ANSIBLE_VAULT_PASSWORD_FILE="~/.dotfiles/secret/ansible_vault_pass"
+
+export SPHERE_MONGO_URI="mongodb://127.0.0.1:27018/sphere"
