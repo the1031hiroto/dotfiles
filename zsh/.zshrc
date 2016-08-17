@@ -55,7 +55,7 @@ HOST_COLOR="$(printf "%%F{%03d}@%%f" "$((${HOST_COLOR} / ${I}))")"
 # #--
 # zstyle ':vcs_info:*' formats "[%b%c%u] (%r/%S)"
 # zstyle ':vcs_info:*' actionformats "(%b|%a) [%r:%S]"
-# 
+#
 # precmd () {
 #         psvar=()
 #         LANG=en_US.UTF-8 vcs_info
@@ -109,38 +109,15 @@ alias lR='ls -lahR'
 alias g=git
 alias d=docker
 
+alias co='git checkout'
 alias be='bundle exec'
 
 setopt  auto_pushd
-#------------------------------------------------
-#| こんなカンジで、cdしたディレクトリをpushd
-#| $ cd hoge 
-#| $ ls
-#| hoga/  huge/  hunya/
-#| $ pwd
-#| /ANY/hoge
-#| $ cd hoga 
-#| $ cd ../huge 
-#| $ cd ../hunya 
-#| $ cd -[TAB]
-#| 0 -- /ANY
-#| 1 -- /ANY/hoge
-#| 2 -- /ANY/hoge/hoga
-#| 3 -- /ANY/hoge/huge
-#| じつはhunyaかfunyaかは悩みどころ
-#------------------------------------------------
 setopt  pushd_ignore_dups    # スタックから重複排除
 
 setopt  correct
-#------------------------------------------------
-#| こんなカンジで「それ、typoじゃね？」とか聞いてくれる
-#| $ sl
-#| zsh: correct 'sl' to 'ls' [nyae]? 
-#| あたりまえだけどsl導入済みの時はSLが走ります。
-#------------------------------------------------
-autoload compinit    # 色々補完
+autoload compinit
 compinit
-# compinit -u    # Cygwinの時は-u付けてパーミッションのテストをスルーしないと都合悪かったはず。
 
 # {0-9a-z} -> 0 1 .. 8 9 a b .. y z
 setopt braceccl
