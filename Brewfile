@@ -3,7 +3,7 @@
 
 # brew leaves
 # brew leaves | xargs -I@ echo brew \"@\"
-$ brew cask list | sort
+# brew cask list | sort
 
 # brew bundle
 
@@ -14,13 +14,13 @@ tap "caskroom/cask"
 tap "caskroom/versions"
 
 brew "ansible"
-brew "apache-spark"
 brew "autossh"
 brew "bfg"
-brew "chromedriver"
 brew "coreutils"
+brew "docker-compose"
 brew "gdal"
 brew "ghostscript"
+brew "git"
 brew "git-lfs"
 brew "homebrew/apache/httpd24"
 brew "imagemagick"
@@ -28,13 +28,16 @@ brew "jbig2dec"
 brew "jenv"
 brew "jq"
 brew "lua"
+brew "lua51"
 brew "mongodb"
+brew "homebrew/versions/mysql56"
 brew "nginx"
 brew "nkf"
 brew "nmap"
-brew "node"
+brew "homebrew/versions/node4-lts"
 brew "packer"
 brew "python"
+brew "q"
 brew "qrencode"
 brew "redis"
 brew "sbt"
