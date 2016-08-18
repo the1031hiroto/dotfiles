@@ -1,8 +1,6 @@
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/libexec:$PATH"
-export PATH="/usr/local/mysql/bin:$PATH"
-export PATH="/usr/local/mysql/support-files:$PATH"
 
 if [ -e /etc/profile ] ; then
   . /etc/profile
