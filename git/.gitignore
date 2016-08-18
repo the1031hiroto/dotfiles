@@ -25,3 +25,7 @@ node_modules
 *.gif
 *.ai
 *.pdf
+
+#--
+
+*.retry
