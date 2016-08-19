@@ -7,23 +7,21 @@ My dotfiles forked from mazgi/dotfiles
 git clone git@github.com:shuji-koike/dotfiles.git ~/.dotfiles
 
 # git clone git@github.com:shuji-koike/dotfiles.git ~/Documents/github.com/shuji-koike/dotfiles
-# ln -s Documents/github.com/shuji-koike/dotfiles .dotfiles
+# ln -sf ~/Documents/github.com/shuji-koike/dotfiles ~/.dotfiles
 ```
 
 ## link!
 
 ```
-# rm .gitconfig .gitignore .screenrc .tmux.conf .vim .vimrc .zshrc
-
-ln -s .dotfiles/git/.gitconfig
-ln -s .dotfiles/git/.gitignore
-ln -s .dotfiles/screen/.screenrc
-ln -s .dotfiles/tmux/.tmux.conf
-ln -s .dotfiles/vim/.vim
-ln -s .dotfiles/vim/.vimrc
-ln -s .dotfiles/zsh .zsh
-ln -s .zsh/.zshrc
-ln -s .zsh/.zshrc.local
+ln -sf .dotfiles/zsh .zsh
+ln -sf .zsh/.zshrc
+ln -sf .zsh/.zshrc.local
+ln -sf .dotfiles/git/.gitconfig
+ln -sf .dotfiles/git/.gitignore
+ln -sf .dotfiles/screen/.screenrc
+ln -sf .dotfiles/tmux/.tmux.conf
+ln -sf .dotfiles/vim/.vim
+ln -sf .dotfiles/vim/.vimrc
 ```
 
 ## that's it!
