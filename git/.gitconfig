@@ -25,6 +25,7 @@
 	df = difftool
 	mm = merge master
 	sl = stash list
+	rh = reset --hard
 	amend = commit --amend
 	cp = cherry-pick
 	pf = push -f
