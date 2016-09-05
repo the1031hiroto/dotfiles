@@ -12,6 +12,7 @@
 
 vender/bundle
 node_modules
+bower_components
 
 #--
 
