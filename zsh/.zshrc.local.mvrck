@@ -5,9 +5,9 @@ export DOCKER_MACHINE_IP=$(docker-machine ip default)
 
 #--
 
-export SBT_OPTS="-XX:PermSize=512m -XX:MaxPermSize=512m -Xms1024m -Xmx2048m -Xss256M"
+export SBT_OPTS="-XX:PermSize=2048m -XX:MaxPermSize=2048m -Xms1024m -Xmx4096m -Xss512M"
 export PLAY_OPTS="-XX:PermSize=2048m -XX:MaxPermSize=2048m -Xms1024m -Xmx4096m -Xss512M"
-export JAVA_OPTS=-Xss256M
+export JAVA_OPTS="-Xss512M"
 
 export PLAY_DB_URL="jdbc:mysql://127.0.0.1:3305/fractale"
 export PLAY_DB_USER="fractale"
@@ -43,7 +43,7 @@ export TEST_REDIS_PORT=7000
 
 export HIVE_CONNECTION_STRING=jdbc:hive2://$DOCKER_MACHINE_IP:10000/default/
 
-export MVRCK_WEBSITE_HOSTNAME=$DOCKER_MACHINE_IP
+export MVRCK_WEBSITE_HOSTNAME=$DOCKER_MACHINE_IP:8080
 
 export ANSIBLE_VAULT_PASSWORD_FILE="~/.dotfiles/secret/ansible_vault_pass"
 
