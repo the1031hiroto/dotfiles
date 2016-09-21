@@ -104,6 +104,7 @@ alias ll='ls -lh'
 alias la='ls -lah'
 alias lR='ls -lahR'
 
+alias a=atom
 alias g=git
 alias d=docker
 
