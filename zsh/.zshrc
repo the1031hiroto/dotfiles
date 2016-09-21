@@ -170,20 +170,6 @@ if which jenv > /dev/null 2>&1; then
   eval "$(jenv init -)"
 fi
 
-if [ -d ${HOME}/.scalaenv ]; then
-  export PATH="${HOME}/.scalaenv/bin:${HOME}/.scalaenv/shims:${PATH}"
-  eval "$(scalaenv init -)"
-fi
-if [ -d ${HOME}/.sbtenv ]; then
-  export PATH="${HOME}/.sbtenv/bin:${HOME}/.sbtenv/shims:${PATH}"
-  eval "$(sbtenv init -)"
-  export SBT_OPTS="-Xmx2G -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -Xss2M"
-fi
-if [ -d ${HOME}/.playenv ]; then
-  export PATH="${HOME}/.playenv/bin:${HOME}/.playenv/shims:${PATH}"
-  eval "$(playenv init -)"
-fi
-
 # Heroku
 if [ -d /usr/local/heroku/bin/ ]; then
   export PATH="/usr/local/heroku/bin:$PATH"
