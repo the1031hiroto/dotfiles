@@ -111,6 +111,8 @@ alias d=docker
 alias co='git checkout'
 alias be='bundle exec'
 
+alias ppp='echo -n `pwd` | pbcopy'
+
 setopt  auto_pushd
 setopt  pushd_ignore_dups    # スタックから重複排除
 
