@@ -31,3 +31,8 @@ bower_components
 
 *.retry
 .vagrant
+
+#--
+
+*.log
+*.out

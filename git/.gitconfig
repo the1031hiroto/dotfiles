@@ -34,6 +34,7 @@
 	wip = commit -a -m \"[ci skip] WIP WIP WIP WIP WIP\"
 	re = reset --soft HEAD~
 	ri = rebase -i
+	su = submodule update
 [filter "media"]
 	required = true
 	clean = git media clean %f
