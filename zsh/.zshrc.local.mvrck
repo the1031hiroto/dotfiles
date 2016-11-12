@@ -48,3 +48,10 @@ export MVRCK_WEBSITE_HOSTNAME=$DOCKER_MACHINE_IP:8080
 export ANSIBLE_VAULT_PASSWORD_FILE="~/.dotfiles/secret/ansible_vault_pass"
 
 export SPHERE_MONGO_URI="mongodb://127.0.0.1:27018/sphere"
+
+export REDSHIFT_DB_HOST="aggregate-with-redshift-test01.cr9ltyaflbzq.ap-northeast-1.redshift.amazonaws.com"
+export REDSHIFT_DB_PORT="5439"
+export REDSHIFT_DB_USER="sphere"
+export REDSHIFT_DB_PASS="AYiEPnIkHfYrD1"
+export REDSHIFT_DB_URL="jdbc:postgresql://$REDSHIFT_DB_HOST:$REDSHIFT_DB_PORT/$REDSHIFT_DB_USER"
+alias redshift='PGPASSWORD=$REDSHIFT_DB_PASS psql -h $REDSHIFT_DB_HOST -U $REDSHIFT_DB_USER -d $REDSHIFT_DB_USER -p $REDSHIFT_DB_PORT'
