@@ -107,6 +107,7 @@ alias lR='ls -lahR'
 alias a=atom
 alias g=git
 alias d=docker
+alias o=open
 
 alias co='git checkout'
 alias be='bundle exec'
@@ -149,6 +150,12 @@ fi
 
 # python env
 [[ -s "${HOME}/.pythonbrew/etc/bashrc" ]] && source "${HOME}/.pythonbrew/etc/bashrc"
+
+# go
+if [ -d "/usr/local/opt/go" ]; then
+  export GOPATH="/usr/local/opt/go"
+  export PATH="/usr/local/opt/go/bin:$PATH"
+fi
 
 # original commands
 [ -d ${HOME}/bin ] && export PATH="${HOME}/bin:${PATH}"
