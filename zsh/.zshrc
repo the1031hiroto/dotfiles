@@ -105,9 +105,11 @@ alias la='ls -lah'
 alias lR='ls -lahR'
 
 alias a=atom
+alias c=pbcopy
 alias g=git
 alias d=docker
 alias o=open
+alias p=pbpaste
 
 alias co='git checkout'
 alias be='bundle exec'
