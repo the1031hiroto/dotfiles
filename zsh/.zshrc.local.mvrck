@@ -5,13 +5,17 @@ export DOCKER_MACHINE_IP=$(docker-machine ip default)
 
 #--
 
-export SBT_OPTS="-XX:PermSize=2048m -XX:MaxPermSize=2048m -Xms1024m -Xmx4096m -Xss512M"
-export PLAY_OPTS="-XX:PermSize=2048m -XX:MaxPermSize=2048m -Xms1024m -Xmx4096m -Xss512M"
-export JAVA_OPTS="-Xss512M"
+export JAVA_OPTS="-Xms512m -Xmx4096m -Xss512m"
+export SBT_OPTS="$JAVA_OPTS"
+export PLAY_OPTS="$JAVA_OPTS"
 
 export PLAY_DB_URL="jdbc:mysql://127.0.0.1:3305/fractale"
 export PLAY_DB_USER="fractale"
 export PLAY_DB_PASS="ZQvU3pkGysk*,6sV"
+
+export PLAY_DB_URL="jdbc:mysql://127.0.0.1/fractale"
+export PLAY_DB_USER="root"
+export PLAY_DB_PASS="root"
 
 export TEST_DB_URL="jdbc:mysql://127.0.0.1/sphere_test"
 export TEST_DB_USER="sphere_test"
@@ -21,21 +25,25 @@ export AUTH_DB_URL="jdbc:mysql://127.0.0.1/sphere_auth"
 export AUTH_DB_USER="sphere_auth"
 export AUTH_DB_PASS="sphere_auth"
 
-export BATCH_DB_URL="jdbc:mysql://127.0.0.1:3306/fractale"
+export BATCH_DB_URL="jdbc:mysql://127.0.0.1/fractale"
 export BATCH_DB_USER=root
 export BATCH_DB_PASS=root
 
-export RDB_BRIEF_DB_URL="jdbc:mysql://127.0.0.1:3306/brief"
+export RDB_BRIEF_DB_URL="jdbc:mysql://127.0.0.1/brief"
 export RDB_BRIEF_DB_USER=root
 export RDB_BRIEF_DB_PASS=root
+
+export RDBCACHE_DB_URL="jdbc:mysql://127.0.0.1/fractale"
+export RDBCACHE_DB_USER=root
+export RDBCACHE_DB_PASS=root
+
+export LOG_DB_URL="jdbc:mysql://127.0.0.1/sphere_log"
+export LOG_DB_USER=root
+export LOG_DB_PASS=root
 
 export URCA_DB_URL="jdbc:mysql://127.0.0.1:3304/urca_dev"
 export URCA_DB_USER="urca"
 export URCA_DB_PASS="qO29NmmSwdqJyQN"
-
-export RDBCACHE_DB_URL="jdbc:mysql://127.0.0.1:3305/fractale"
-export RDBCACHE_DB_USER="fractale"
-export RDBCACHE_DB_PASS="ZQvU3pkGysk*,6sV"
 
 export AUD_REDIS_PORT=7000
 export BUDGET_REDIS_PORT=7000
@@ -48,10 +56,3 @@ export MVRCK_WEBSITE_HOSTNAME=$DOCKER_MACHINE_IP:8080
 export ANSIBLE_VAULT_PASSWORD_FILE="~/.dotfiles/secret/ansible_vault_pass"
 
 export SPHERE_MONGO_URI="mongodb://127.0.0.1:27018/sphere"
-
-export REDSHIFT_DB_HOST="aggregate-with-redshift-test01.cr9ltyaflbzq.ap-northeast-1.redshift.amazonaws.com"
-export REDSHIFT_DB_PORT="5439"
-export REDSHIFT_DB_USER="sphere"
-export REDSHIFT_DB_PASS="AYiEPnIkHfYrD1"
-export REDSHIFT_DB_URL="jdbc:postgresql://$REDSHIFT_DB_HOST:$REDSHIFT_DB_PORT/$REDSHIFT_DB_USER"
-alias redshift='PGPASSWORD=$REDSHIFT_DB_PASS psql -h $REDSHIFT_DB_HOST -U $REDSHIFT_DB_USER -d $REDSHIFT_DB_USER -p $REDSHIFT_DB_PORT'
