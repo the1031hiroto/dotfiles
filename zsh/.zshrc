@@ -186,3 +186,10 @@ fi
 if [ -d /usr/local/heroku/bin/ ]; then
   export PATH="/usr/local/heroku/bin:$PATH"
 fi
+
+# hadoop
+
+if [ -d "/usr/local/Cellar/hadoop" ]; then
+  export HADOOP_HOME="/usr/local/Cellar/hadoop/2.8.0/libexec"
+  export HADOOP_CONF_DIR="$HADOOP_HOME/etc/hadoop"
+fi
