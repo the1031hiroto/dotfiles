@@ -163,17 +163,10 @@ fi
 [ -d ${HOME}/bin ] && export PATH="${HOME}/bin:${PATH}"
 [ -d ${HOME}/Applications/bin ] && export PATH="${HOME}/Applications/bin:${PATH}"
 
-# JVM on Mac OSX
-if [ -e "/System/Library/Frameworks/JavaVM.framework/Versions/A/Commands/java_home" ]; then
-  export JAVA_HOME=$(/System/Library/Frameworks/JavaVM.framework/Versions/A/Commands/java_home -v "1.8")
+# java
+if [ -e "/usr/libexec/java_home" ]; then
+  export JAVA_HOME=$(/usr/libexec/java_home -v "1.8")
   PATH=${JAVA_HOME}/bin:${PATH}
-fi
-
-# Scala, sbt, PlayFramework
-[ -d ${HOME}/Applications/activator/current ] && export PATH="${HOME}/Applications/activator/current:${PATH}"
-if [ -d "${HOME}/.svm/current" ]; then
-  export SCALA_HOME="${HOME}/.svm/current/rt"
-  export PATH="${SCALA_HOME}/.svm/current/rt/bin:${PATH}"
 fi
 
 # jEnv
