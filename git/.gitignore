@@ -36,3 +36,9 @@ bower_components
 
 *.log
 *.out
+
+#--
+
+/.idea
+/cmake-build-debug
+/CMakeLists.txt
