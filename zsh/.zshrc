@@ -113,6 +113,7 @@ alias p=pbpaste
 
 alias co='git checkout'
 alias be='bundle exec'
+alias sl='brew services list'
 
 alias ppp='echo -n `pwd` | pbcopy'
 

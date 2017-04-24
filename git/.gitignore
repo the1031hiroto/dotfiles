@@ -39,6 +39,6 @@ bower_components
 
 #--
 
-/.idea
+.idea
 /cmake-build-debug
 /CMakeLists.txt
