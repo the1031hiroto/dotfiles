@@ -168,7 +168,9 @@ fi
 # java
 if [ -e "/usr/libexec/java_home" ]; then
   export JAVA_HOME=$(/usr/libexec/java_home -v "1.8")
-  PATH=${JAVA_HOME}/bin:${PATH}
+  export PATH=${JAVA_HOME}/bin:${PATH}
+  export SBT_OPTS="$JAVA_OPTS"
+  export PLAY_OPTS="$JAVA_OPTS"
 fi
 
 # jEnv
@@ -182,8 +184,15 @@ if [ -d /usr/local/heroku/bin/ ]; then
   export PATH="/usr/local/heroku/bin:$PATH"
 fi
 
-# hadoop
+# docker
+if [ -s "/var/run/docker.sock" ]; then
+  eval $(docker-machine env)
+  export DOCKER_MACHINE_IP=$(docker-machine ip default)
+else
+  export DOCKER_MACHINE_IP=127.0.0.1
+fi
 
+# hadoop
 if [ -d "/usr/local/Cellar/hadoop" ]; then
   export HADOOP_HOME="/usr/local/Cellar/hadoop/2.8.0/libexec"
   export HADOOP_CONF_DIR="$HADOOP_HOME/etc/hadoop"
