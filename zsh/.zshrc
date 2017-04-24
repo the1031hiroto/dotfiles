@@ -193,7 +193,7 @@ else
 fi
 
 # hadoop
-if [ -d "/usr/local/Cellar/hadoop" ]; then
-  export HADOOP_HOME="/usr/local/Cellar/hadoop/2.8.0/libexec"
+if [ -d "/usr/local/opt/hadoop" ]; then
+  export HADOOP_HOME="/usr/local/opt/hadoop/libexec"
   export HADOOP_CONF_DIR="$HADOOP_HOME/etc/hadoop"
 fi
