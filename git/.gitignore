@@ -42,3 +42,5 @@ bower_components
 .idea
 /cmake-build-debug
 /CMakeLists.txt
+
+metastore_db
