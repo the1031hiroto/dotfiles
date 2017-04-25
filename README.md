@@ -19,7 +19,7 @@ ln -sf .dotfiles/tmux/.tmux.conf
 ln -sf .dotfiles/vim/.vim
 ln -sf .dotfiles/vim/.vimrc
 
-touch -sf .zshrc.local
+touch .zshrc.local
 ```
 
 ## that's it!
