@@ -185,11 +185,11 @@ if [ -d /usr/local/heroku/bin/ ]; then
 fi
 
 # docker
-if [ -s "/var/run/docker.sock" ]; then
+if [ -e "/var/run/docker.sock" ]; then
+  export DOCKER_MACHINE_IP=127.0.0.1
+else
   eval $(docker-machine env)
   export DOCKER_MACHINE_IP=$(docker-machine ip default)
-else
-  export DOCKER_MACHINE_IP=127.0.0.1
 fi
 
 # hadoop
