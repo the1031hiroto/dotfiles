@@ -173,8 +173,8 @@ if [ -e "/usr/libexec/java_home" ]; then
   export PLAY_OPTS="$JAVA_OPTS"
 fi
 
-# jEnv
-if which jenv > /dev/null 2>&1; then
+# jenv
+if [ -d "/usr/local/opt/jenv" ]; then
   export JENV_ROOT=/usr/local/opt/jenv
   eval "$(jenv init -)"
 fi
