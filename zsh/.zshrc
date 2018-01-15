@@ -110,6 +110,7 @@ alias g=git
 alias d=docker
 alias o=open
 alias p=pbpaste
+alias y=yarn
 
 alias co='git checkout'
 alias be='bundle exec'
