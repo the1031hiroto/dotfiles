@@ -187,7 +187,7 @@ fi
 # docker
 if [ -e "/var/run/docker.sock" ]; then
   export DOCKER_MACHINE_IP=127.0.0.1
-else
+elif [ command -v docker-machine >/dev/null 2>&1 ]; then
   eval $(docker-machine env)
   export DOCKER_MACHINE_IP=$(docker-machine ip default)
 fi
