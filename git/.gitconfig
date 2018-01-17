@@ -35,6 +35,7 @@
 	re = reset --soft HEAD~
 	ri = rebase -i
 	su = submodule update
+	shallow = clone --depth 1
 [filter "media"]
 	required = true
 	clean = git media clean %f
