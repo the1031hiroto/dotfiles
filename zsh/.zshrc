@@ -115,6 +115,7 @@ alias y=yarn
 alias aa='git aa'
 alias co='git co'
 alias st='git st'
+alias push='git push'
 
 alias be='bundle exec'
 alias s='brew services'
