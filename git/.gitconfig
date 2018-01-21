@@ -19,7 +19,7 @@
 	c = commit
 	r = rebase
 	l = log
-	aa = commit --amend -a
+	aa = commit --amend -a --no-edit
 	st = status
 	bl = branch -a
 	co = checkout
