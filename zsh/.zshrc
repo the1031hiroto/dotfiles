@@ -121,6 +121,8 @@ alias be='bundle exec'
 alias s='brew services'
 alias sl='brew services list'
 
+alias t='tig --all'
+
 alias ppp='echo -n `pwd` | pbcopy'
 
 setopt  auto_pushd
