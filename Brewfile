@@ -1,20 +1,26 @@
-# brew bundle
 # brew tap homebrew/bundle
+# brew bundle dump --file=~/.dotfiles/Brewfile
+# brew bundle --file=~/.dotfiles/Brewfile
 
-# brew leaves
-# brew leaves | xargs -I@ echo brew \"@\"
-# brew cask list | sort
-
-# brew bundle
-
+tap "caskroom/cask"
+tap "homebrew/bundle"
+tap "homebrew/core"
+tap "homebrew/services"
 brew "ansible"
 brew "awscli"
 brew "bash"
+brew "chrome-cli"
+brew "cmake"
 brew "coreutils"
+brew "dep"
+brew "duti"
+brew "ffmpeg"
+brew "fswatch"
+brew "geth"
 brew "git"
 brew "git-lfs"
-brew "hive"
 brew "imagemagick"
+brew "ipfs"
 brew "jq"
 brew "maven"
 brew "mongodb"
@@ -25,7 +31,6 @@ brew "nmap"
 brew "node"
 brew "packer"
 brew "postgresql"
-brew "presto"
 brew "protobuf"
 brew "python"
 brew "q"
@@ -33,7 +38,13 @@ brew "rbenv"
 brew "redis"
 brew "sbt"
 brew "scala"
+brew "snappy"
+brew "terraform"
+brew "tig"
+brew "trash"
 brew "tree"
 brew "typesafe-activator"
 brew "watch"
 brew "wget"
+brew "yasm"
+brew "zlib"
