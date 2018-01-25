@@ -192,7 +192,7 @@ if [ -d /usr/local/heroku/bin/ ]; then
 fi
 
 # Docker
-command -v docker-machine >/dev/null 2>&1 && eval $(docker-machine env)
+command -v docker-machine >/dev/null 2>&1 && eval $(docker-machine env 2>/dev/null)
 
 # hadoop
 if [ -d "/usr/local/opt/hadoop" ]; then
