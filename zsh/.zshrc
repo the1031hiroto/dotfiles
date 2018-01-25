@@ -191,13 +191,8 @@ if [ -d /usr/local/heroku/bin/ ]; then
   export PATH="/usr/local/heroku/bin:$PATH"
 fi
 
-# docker
-if [ -e "/var/run/docker.sock" ]; then
-  export DOCKER_MACHINE_IP=127.0.0.1
-elif [ command -v docker-machine >/dev/null 2>&1 ]; then
-  eval $(docker-machine env)
-  export DOCKER_MACHINE_IP=$(docker-machine ip default)
-fi
+# Docker
+command -v docker-machine >/dev/null 2>&1 && eval $(docker-machine env)
 
 # hadoop
 if [ -d "/usr/local/opt/hadoop" ]; then
