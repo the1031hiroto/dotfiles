@@ -120,6 +120,8 @@ alias push='git push'
 alias be='bundle exec'
 alias s='brew services'
 alias sl='brew services list'
+alias start='brew services start'
+alias stop='brew services stop'
 
 alias t='tig --all'
 
