@@ -20,6 +20,8 @@ ln -sf .dotfiles/vim/.vim
 ln -sf .dotfiles/vim/.vimrc
 
 touch .zshrc.local
+
+chmod 400 .zshrc
 ```
 
 ## that's it!
