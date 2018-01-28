@@ -1,3 +1,4 @@
+setopt auto_cd
 
 bindkey ' ' magic-space  # also do history expansion on space
 
