@@ -16,6 +16,7 @@ alias b=brew
 alias c=pbcopy
 alias d=docker
 alias g=git
+alias h='history -E 1 | less +G'
 alias o=open
 alias p=pbpaste
 alias s='brew services'
