@@ -35,5 +35,6 @@ alias bx='bundle exec'
 alias sl='brew services list'
 alias start='brew services start'
 alias stop='brew services stop'
+alias upgrade='brew update && brew upgrade'
 
 alias ppp='echo -n `pwd` | pbcopy'
