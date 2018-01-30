@@ -30,6 +30,7 @@ alias push='git push'
 alias pull='git pull'
 alias wip='git add . && git wip'
 
+alias dx='docker run -it --rm'
 alias rx='rbenv exec'
 alias bx='bundle exec'
 
