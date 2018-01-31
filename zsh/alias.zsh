@@ -23,7 +23,7 @@ alias s='brew services'
 alias t='tig --all'
 alias y=yarn
 
-alias aa='git aa'
+alias aa='git add . && git aa'
 alias co='git co'
 alias st='git st'
 alias push='git push'
