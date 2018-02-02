@@ -40,4 +40,8 @@ alias stop='brew services stop'
 alias restart='brew services restart'
 alias upgrade='brew update && brew upgrade && brew cleanup && brew leaves'
 
+alias images='docker images'
+alias images-pull='docker images | tail -n +2 | awk '{print $1 ":" $2}' | grep -v ":<none>" | xargs -n1 docker pull'
+alias images-clean='docker system prune -f'
+
 alias ppp='echo -n `pwd` | pbcopy'
