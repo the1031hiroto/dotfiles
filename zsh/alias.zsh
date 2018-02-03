@@ -19,7 +19,7 @@ alias g=git
 alias h='history -E 1 | less +G'
 alias o=open
 alias p=pbpaste
-alias s='brew services'
+alias s=ssh
 alias t='tig --all'
 alias y=yarn
 
