@@ -3,13 +3,13 @@ My dotfiles forked from mazgi/dotfiles
 
 ## clone!
 
-```
+```shell
 git clone git@github.com:shuji-koike/dotfiles.git ~/.dotfiles
 ```
 
 ## link!
 
-```
+```shell
 ln -sf .dotfiles/zsh .zsh
 ln -sf .zsh/.zshrc
 ln -sf .dotfiles/git/.gitconfig
