@@ -4,6 +4,7 @@
       "symbols-view"
       "exception-reporting"
       "background-tips"
+      "about"
     ]
     packagesWithKeymapsDisabled: [
       "symbols-view"
