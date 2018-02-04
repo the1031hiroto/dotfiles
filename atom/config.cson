@@ -1,0 +1,29 @@
+"*":
+  core:
+    disabledPackages: [
+      "symbols-view"
+    ]
+    packagesWithKeymapsDisabled: [
+      "symbols-view"
+    ]
+    telemetryConsent: "limited"
+    titleBar: "custom"
+    uriHandlerRegistration: "always"
+  editor:
+    invisibles: {}
+    nonWordCharacters: "/\\()\"':,.;<>~#%^&*|+=[]{}`?-…"
+    showIndentGuide: true
+    showInvisibles: true
+  "terminal-plus":
+    toggles:
+      runInsertedText: false
+  "tree-view":
+    autoReveal: true
+    hideIgnoredNames: true
+  welcome:
+    showOnStartup: false
+  whitespace: {}
+".go.source":
+  editor:
+    softWrap: false
+    tabType: "auto"
