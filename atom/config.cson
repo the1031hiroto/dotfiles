@@ -2,6 +2,7 @@
   core:
     disabledPackages: [
       "symbols-view"
+      "exception-reporting"
     ]
     packagesWithKeymapsDisabled: [
       "symbols-view"
