@@ -3,6 +3,7 @@
     disabledPackages: [
       "symbols-view"
       "exception-reporting"
+      "background-tips"
     ]
     packagesWithKeymapsDisabled: [
       "symbols-view"
