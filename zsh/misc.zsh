@@ -1,5 +1,4 @@
 setopt auto_cd
-cdpath=(..)
 
 bindkey ' ' magic-space  # also do history expansion on space
 
