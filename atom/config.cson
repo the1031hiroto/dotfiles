@@ -6,6 +6,9 @@
       "background-tips"
       "about"
     ]
+    ignoredNames: [
+      ".DS_Store"
+    ]
     packagesWithKeymapsDisabled: [
       "symbols-view"
     ]
@@ -21,8 +24,10 @@
     toggles:
       runInsertedText: false
   "tree-view":
+    alwaysOpenExisting: true
     autoReveal: true
     hideIgnoredNames: true
+    squashDirectoryNames: true
   welcome:
     showOnStartup: false
   whitespace: {}
