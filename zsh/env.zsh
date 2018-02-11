@@ -3,6 +3,13 @@ if [ -d ${HOME}/.rbenv ]; then
   eval "$(rbenv init -)"
 fi
 
+# pyenv
+if [ -d ${HOME}/.pyenv ]; then
+  export PYENV_ROOT="$HOME/.pyenv"
+  export PATH="$PYENV_ROOT/bin:$PATH"
+  eval "$(pyenv init -)"
+fi
+
 # go
 if [ -d "/usr/local/opt/go" ]; then
   export GOPATH="/usr/local/opt/go"
