@@ -46,3 +46,10 @@ if [ -d "/usr/local/opt/hadoop" ]; then
   export HADOOP_HOME="/usr/local/opt/hadoop/libexec"
   export HADOOP_CONF_DIR="$HADOOP_HOME/etc/hadoop"
 fi
+
+# linuxbrew
+if [ -d "/home/linuxbrew/.linuxbrew" ]; then
+  function brew { su - linuxbrew -c "brew $1 $2 $3 $4" }
+  # export PATH="$PATH:/home/linuxbrew/.linuxbrew/bin"
+  # export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+fi
