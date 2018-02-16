@@ -33,3 +33,5 @@ setopt hist_ignore_all_dups             # 履歴から重複排除
 setopt extended_history                 # 履歴ファイルに時刻を記録
 setopt transient_rprompt                # 最新行以外の右プロンプトを消してくれるらしい
 setopt extended_glob                    # ^と~使ってファイルを除外
+
+bindkey "\e[3~" delete-char
