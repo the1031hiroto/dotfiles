@@ -49,3 +49,7 @@ metastore_db
 #--
 
 *.pem
+
+#--
+
+tmp.*
