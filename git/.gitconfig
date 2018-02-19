@@ -27,7 +27,7 @@
 	mm = merge master
 	sl = stash list
 	rh = reset --hard
-	amend = commit --amend
+	amend = commit --amend --no-edit
 	cp = cherry-pick
 	pf = push -f
 	pop = stash pop
