@@ -13,7 +13,7 @@
 [mergetool]
 	prompt = false
 [alias]
-	f = fetch
+	f = fetch --prune
 	m = merge
 	p = pull
 	c = commit
