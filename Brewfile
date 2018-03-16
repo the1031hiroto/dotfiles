@@ -3,6 +3,7 @@
 # brew bundle --file=~/.dotfiles/Brewfile
 
 tap "caskroom/cask"
+tap "caskroom/versions"
 tap "homebrew/bundle"
 tap "homebrew/core"
 tap "homebrew/services"
@@ -61,3 +62,8 @@ brew "wget"
 brew "yarn"
 brew "zlib"
 brew "zsh"
+cask "java"
+cask "caskroom/versions/java8"
+cask "atom"
+cask "libreoffice"
+cask "vagrant"
