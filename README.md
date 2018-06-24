@@ -14,6 +14,7 @@ ln -sf .dotfiles/zsh .zsh
 ln -sf .zsh/.zshrc
 ln -sf .dotfiles/git/.gitconfig
 ln -sf .dotfiles/git/.gitignore
+ln -sf .dotfiles/git/.tigrc
 ln -sf .dotfiles/atom .atom
 ln -sf .dotfiles/screen/.screenrc
 ln -sf .dotfiles/tmux/.tmux.conf

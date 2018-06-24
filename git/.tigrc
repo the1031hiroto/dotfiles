@@ -1,0 +1,4 @@
+# http://jonas.nitro.dk/tig/manual.html#configuration-files
+# https://github.com/jonas/tig/blob/master/tigrc
+
+set main-view-id = yes

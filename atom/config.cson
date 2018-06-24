@@ -16,6 +16,7 @@
     titleBar: "custom"
     uriHandlerRegistration: "always"
   editor:
+    fontSize: 15
     invisibles: {}
     nonWordCharacters: "/\\()\"':,.;<>~#%^&*|+=[]{}`?-…"
     showIndentGuide: true
