@@ -33,3 +33,11 @@
 
 '.platform-darwin':
   'cmd-r': 'browser-refresh:open'
+'atom-workspace atom-text-editor:not([mini])':
+  'cmd-shift-enter': 'editor:fold-current-row'
+  'cmd-enter': 'editor:unfold-current-row'
+  'alt-enter': 'editor:unfold-all'
+  'alt-1': 'editor:fold-at-indent-level-1'
+  'alt-2': 'editor:fold-at-indent-level-2'
+  'alt-3': 'editor:fold-at-indent-level-3'
+  'alt-4': 'editor:unfold-all'
