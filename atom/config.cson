@@ -21,6 +21,8 @@
     nonWordCharacters: "/\\()\"':,.;<>~#%^&*|+=[]{}`?-…"
     showIndentGuide: true
     showInvisibles: true
+  "linter-eslint":
+    fixOnSave: true
   "terminal-plus":
     toggles:
       runInsertedText: false
