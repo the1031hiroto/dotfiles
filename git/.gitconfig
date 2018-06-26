@@ -22,6 +22,7 @@
 	aa = commit --amend -a --no-edit
 	st = status
 	bl = branch -a
+	bd = branch -D
 	co = checkout
 	df = difftool
 	mm = merge master

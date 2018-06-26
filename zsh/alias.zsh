@@ -29,6 +29,7 @@ alias st='git st'
 alias push='git push'
 alias pull='git pull'
 alias wip='git add . && git wip'
+alias branch-clean='git branch --merged master | grep -v master | xargs -n1 git branch -D'
 
 alias dx='docker run -it --rm'
 alias dxx='docker exec -it'
