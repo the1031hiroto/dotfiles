@@ -18,11 +18,16 @@
   editor:
     fontSize: 15
     invisibles: {}
+    lineHeight: 1.4
     nonWordCharacters: "/\\()\"':,.;<>~#%^&*|+=[]{}`?-…"
     showIndentGuide: true
     showInvisibles: true
+    undoGroupingInterval: 1000
   "linter-eslint":
     fixOnSave: true
+  "linter-ui-default":
+    decorateOnTreeView: "Files and Directories"
+    showPanel: true
   "terminal-plus":
     toggles:
       runInsertedText: false
