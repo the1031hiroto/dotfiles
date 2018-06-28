@@ -25,9 +25,17 @@
     undoGroupingInterval: 1000
   "linter-eslint":
     fixOnSave: true
+    lintHtmlFiles: true
+    scopes: [
+      "source.js"
+      "source.jsx"
+      "source.js.jsx"
+      "source.babel"
+      "source.js-semantic"
+      "text.html.vue"
+    ]
   "linter-ui-default":
     decorateOnTreeView: "Files and Directories"
-    showPanel: true
   "terminal-plus":
     toggles:
       runInsertedText: false
