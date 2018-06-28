@@ -1,5 +1,6 @@
 # dotfiles
-My dotfiles forked from mazgi/dotfiles
+
+https://dotfiles.github.io/
 
 ## clone!
 
