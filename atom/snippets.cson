@@ -19,3 +19,23 @@
 # If you are unfamiliar with CSON, you can read more about it in the
 # Atom Flight Manual:
 # http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
+
+'.source.js':
+  'console.log':
+    'prefix': 'l'
+    'body': 'console.log($1);'
+  'function':
+    'prefix': 'f'
+    'body': 'function($1) {$2}'
+  'async function':
+    'prefix': 'as'
+    'body': 'async function($1) {$2}'
+  'require':
+    'prefix': 'require'
+    'body': "const $1 = require('$2');"
+  'const':
+    'prefix': 'c'
+    'body': 'const $1 = $2;'
+  'import':
+    'prefix': 'im'
+    'body': "import $1 from '$2';"
