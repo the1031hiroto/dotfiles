@@ -29,3 +29,12 @@ chmod 400 .zshrc
 ## that's it!
 
 :trollface:
+
+
+## want more?
+
+### atom
+
+``` sh
+apm stars --install
+```
