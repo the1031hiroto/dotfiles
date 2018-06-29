@@ -5,6 +5,7 @@
       "exception-reporting"
       "background-tips"
       "about"
+      "linter-flow"
     ]
     ignoredNames: [
       ".DS_Store"
@@ -34,6 +35,8 @@
       "source.js-semantic"
       "text.html.vue"
     ]
+  "linter-flow":
+    enableAll: true
   "linter-ui-default":
     decorateOnTreeView: "Files and Directories"
   "terminal-plus":
