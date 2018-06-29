@@ -25,6 +25,7 @@
 	bd = branch -D
 	co = checkout
 	df = difftool
+	dfu = diff @{upstream}
 	mm = merge master
 	sl = stash list
 	rh = reset --hard
