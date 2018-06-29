@@ -39,3 +39,6 @@
   'import':
     'prefix': 'im'
     'body': "import $1 from '$2';"
+  'module.exports':
+    'prefix': 'module.exports'
+    'body': 'module.exports = $1;'

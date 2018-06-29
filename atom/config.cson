@@ -39,9 +39,6 @@
     enableAll: true
   "linter-ui-default":
     decorateOnTreeView: "Files and Directories"
-  "terminal-plus":
-    toggles:
-      runInsertedText: false
   "tree-view":
     alwaysOpenExisting: true
     autoReveal: true
