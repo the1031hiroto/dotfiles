@@ -30,6 +30,8 @@ alias push='git push'
 alias pull='git pull'
 alias wip='git add . && git wip'
 alias branch-clean='git branch --merged master | grep -v master | xargs -n1 git branch -D'
+alias stash='git stash -u'
+alias pop='git stash pop'
 
 alias dx='docker run -it --rm'
 alias dxx='docker exec -it'
@@ -50,3 +52,5 @@ alias images-clean='docker system prune -f'
 alias dtail='docker logs --tail 10 -f'
 
 alias ppp='echo -n `pwd` | pbcopy'
+
+alias z-reload='. ~/.zshrc && . ~/.zshrc.local'

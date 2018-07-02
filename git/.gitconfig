@@ -13,33 +13,43 @@
 [mergetool]
 	prompt = false
 [alias]
-	f = fetch --prune
+	a = add
+	b = branch
+	c = commit
+	d = diff
+	f = fetch
+	g = reflog
+	l = log
 	m = merge
 	p = pull
-	c = commit
 	r = rebase
-	l = log
+	s = stash
+	t = tag
+	w = show
 	aa = commit --amend -a --no-edit
-	st = status
-	bl = branch -a
 	bd = branch -D
+	bl = branch -a
+	cb = checkout -b
+	cm = checkout master
 	co = checkout
-	df = difftool
-	dfu = diff @{upstream}
-	mm = merge master
-	sl = stash list
-	rh = reset --hard
-	amend = commit --amend --no-edit
 	cp = cherry-pick
+	df = difftool
+	du = difftool @{upstream}
+	mm = merge origin/master
 	pf = push -f
+	re = reset --soft HEAD~
+	rh = reset --hard
+	ri = rebase -i
+	rs = reset --soft
+	sl = stash list
+	st = status
+	su = submodule update
 	pop = stash pop
 	wip = commit -a -m \"[ci skip] WIP WIP WIP WIP WIP\"
-	re = reset --soft HEAD~
-	ri = rebase -i
-	su = submodule update
+	amend = commit --amend --no-edit
 	shallow = clone --depth 1
-	[fetch]
-		prune = true
+[fetch]
+	prune = true
 [filter "media"]
 	required = true
 	clean = git media clean %f
