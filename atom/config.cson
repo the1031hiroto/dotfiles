@@ -24,6 +24,8 @@
     showIndentGuide: true
     showInvisibles: true
     undoGroupingInterval: 1000
+  linter:
+    lintOnChangeInterval: 3000
   "linter-eslint":
     fixOnSave: true
     lintHtmlFiles: true
