@@ -51,6 +51,8 @@ alias images-pull='docker images | tail -n +2 | awk '\''{print $1 ":" $2}'\'' | 
 alias images-clean='docker system prune -f'
 alias dtail='docker logs --tail 10 -f'
 
+alias e2e='yarn e2e'
+
 alias ppp='echo -n `pwd` | pbcopy'
 
 alias z-reload='. ~/.zshrc && . ~/.zshrc.local'
