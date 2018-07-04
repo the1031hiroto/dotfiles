@@ -29,6 +29,9 @@
   "linter-eslint":
     fixOnSave: true
     lintHtmlFiles: true
+    rulesToDisableWhileFixing: [
+      "no-debugger"
+    ]
     scopes: [
       "source.js"
       "source.jsx"
