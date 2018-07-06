@@ -35,6 +35,7 @@
 	cp = cherry-pick
 	df = difftool
 	du = difftool @{upstream}
+	fm = fetch origin master:master
 	mm = merge origin/master
 	pf = push -f
 	re = reset --soft HEAD~
