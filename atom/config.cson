@@ -9,6 +9,7 @@
     ]
     ignoredNames: [
       ".DS_Store"
+      "node_modules"
     ]
     packagesWithKeymapsDisabled: [
       "symbols-view"
