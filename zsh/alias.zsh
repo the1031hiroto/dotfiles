@@ -44,6 +44,7 @@ alias start='brew services start'
 alias stop='brew services stop'
 alias restart='brew services restart'
 alias upgrade='brew update && brew upgrade && brew cleanup && brew leaves'
+alias cask='brew cask'
 
 alias di='docker images'
 alias images='docker images'
