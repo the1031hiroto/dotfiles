@@ -27,6 +27,7 @@ alias y=yarn
 alias aa='git add . && git aa'
 alias co='git co'
 alias st='git st'
+alias fetch='git fetch'
 alias push='git push'
 alias pull='git pull'
 alias wip='git add . && git wip'
