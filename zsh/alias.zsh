@@ -17,6 +17,7 @@ alias c=pbcopy
 alias d=docker
 alias g=git
 alias h='history -E 1 | less +G'
+alias l=less
 alias o=open
 alias p=pbpaste
 alias s=ssh
