@@ -15,6 +15,7 @@ alias a=atom
 alias b=brew
 alias c=pbcopy
 alias d=docker
+alias f='git fetch'
 alias g=git
 alias h='history -E 1 | less +G'
 alias l=less
