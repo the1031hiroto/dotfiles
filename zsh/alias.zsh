@@ -24,6 +24,7 @@ alias p=pbpaste
 alias s=ssh
 alias t='tig --all'
 alias y=yarn
+alias z='. ~/.zshrc && . ~/.zshrc.local'
 
 alias aa='git add . && git aa'
 alias co='git co'
