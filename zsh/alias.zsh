@@ -23,6 +23,7 @@ alias o=open
 alias p=pbpaste
 alias s=ssh
 alias t='tig --all'
+alias v='vim'
 alias y=yarn
 alias z='. ~/.zshrc && . ~/.zshrc.local'
 
