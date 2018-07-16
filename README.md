@@ -18,7 +18,6 @@ ln -sf .dotfiles/git/.gitignore
 ln -sf .dotfiles/git/.tigrc
 ln -sf .dotfiles/atom .atom
 ln -sf .dotfiles/screen/.screenrc
-ln -sf .dotfiles/tmux/.tmux.conf
 ln -sf .dotfiles/vim/.vimrc
 
 touch .zshrc.local
