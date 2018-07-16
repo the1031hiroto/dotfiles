@@ -16,7 +16,6 @@ ln -sf .zsh/.zshrc
 ln -sf .dotfiles/git/.gitconfig
 ln -sf .dotfiles/git/.gitignore
 ln -sf .dotfiles/git/.tigrc
-ln -sf .dotfiles/atom .atom
 ln -sf .dotfiles/screen/.screenrc
 ln -sf .dotfiles/vim/.vimrc
 
@@ -35,5 +34,6 @@ chmod 400 .zshrc
 ### atom
 
 ``` sh
+ln -sf .dotfiles/atom .atom
 apm stars --install
 ```
