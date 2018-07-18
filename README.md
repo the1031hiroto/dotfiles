@@ -37,3 +37,8 @@ chmod 400 .zshrc
 ln -sf .dotfiles/atom .atom
 apm stars --install
 ```
+### hyper
+
+``` sh
+ln -sf .dotfiles/.hyper.js
+```
