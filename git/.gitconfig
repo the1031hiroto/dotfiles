@@ -36,6 +36,7 @@
 	df = difftool
 	du = difftool @{upstream}
 	fm = fetch origin master:master
+	gg = grep --line-number --show-function --heading --break
 	mm = merge origin/master
 	pf = push -f
 	re = reset --soft HEAD~
