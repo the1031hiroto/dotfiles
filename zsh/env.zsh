@@ -53,3 +53,8 @@ if [ -d "/home/linuxbrew/.linuxbrew" ]; then
   # export PATH="$PATH:/home/linuxbrew/.linuxbrew/bin"
   # export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 fi
+
+# N
+if [ -d ${HOME}/.n ]; then
+  export N_PREFIX=${HOME}/.n
+fi
