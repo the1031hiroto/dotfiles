@@ -42,3 +42,17 @@
   'module.exports':
     'prefix': 'module.exports'
     'body': 'module.exports = $1;'
+  'mocha.describe':
+    'prefix': 'describe'
+    'body': """
+describe("$1", function() {
+  it("$2", function() {
+  })
+})
+"""
+  'mocha.it':
+    'prefix': 'it'
+    'body': """
+it("$1", function() {
+})
+"""
