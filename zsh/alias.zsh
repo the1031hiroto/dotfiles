@@ -52,7 +52,6 @@ alias pop='git stash pop'
 alias gh='github'
 
 alias dx='docker run -it --rm'
-alias dxx='docker exec -it'
 alias rx='rbenv exec'
 alias bx='bundle exec'
 
@@ -63,12 +62,6 @@ alias stop='brew services stop'
 alias restart='brew services restart'
 alias upgrade='brew update && brew upgrade && brew cleanup && brew leaves'
 alias cask='brew cask'
-
-alias di='docker images'
-alias images='docker images'
-alias images-pull='docker images | tail -n +2 | awk '\''{print $1 ":" $2}'\'' | grep -v ":<none>" | xargs -n1 docker pull'
-alias images-clean='docker system prune -f'
-alias dtail='docker logs --tail 10 -f'
 
 alias e2e='yarn test:e2e'
 
