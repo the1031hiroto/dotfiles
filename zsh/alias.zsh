@@ -66,5 +66,7 @@ alias cask='brew cask'
 alias e2e='yarn test:e2e'
 
 alias ppp='echo -n `pwd` | pbcopy'
+alias j2y='json2yaml'
+alias y2j='yaml2json'
 
 alias z-reload='. ~/.zshrc && . ~/.zshrc.local'
