@@ -15,4 +15,4 @@ alias docker-host-shell="screen ${HOME}/Library/Containers/com.docker.docker/Dat
 
 alias dx-pma='docker run -d --rm -e PMA_HOST=docker.for.mac.host.internal -p 8033:80 --name pma phpmyadmin/phpmyadmin; open http://localhost:8033/;'
 alias dx-c9='docker run -d --rm -p 8009:80 -v $(pwd):/workspace --name cloud9 kdelfour/cloud9-docker'
-alias dx-redis='docker run -d --rm -p 6379:6379 --name redis redis'
+alias dx-redis='docker run -d --rm -p 6379:6379 -v /usr/local/etc/redis.conf:/usr/local/etc/redis/redis.conf --name redis redis'
