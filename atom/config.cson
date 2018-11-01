@@ -45,9 +45,15 @@
     enableAll: true
   "linter-ui-default":
     decorateOnTreeView: "Files and Directories"
+  "platformio-ide-terminal":
+    toggles:
+      autoClose: true
+      runInsertedText: false
+      selectToCopy: false
   "tree-view":
     alwaysOpenExisting: true
     autoReveal: true
+    focusOnReveal: false
     hideIgnoredNames: true
     squashDirectoryNames: true
   welcome:
