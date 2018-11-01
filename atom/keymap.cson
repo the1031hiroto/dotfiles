@@ -47,3 +47,5 @@
   'alt-8': 'editor:fold-at-indent-level-8'
   'alt-9': 'editor:fold-at-indent-level-9'
   'alt-0': 'editor:unfold-all'
+'.platform-darwin atom-workspace':
+  'cmd-t': 'platformio-ide-terminal:new'
