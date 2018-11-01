@@ -3,6 +3,9 @@ alias images-names='docker images --format "{{.Repository}}:{{.Tag}}"'
 alias images-pull='docker images --format "{{.Repository}}:{{.Tag}}" | grep -v ":<none>"  | grep -v "k8s.gcr.io" | grep -v "docker/kube" | xargs -n1 docker pull'
 alias images-clean='docker system prune -f'
 
+alias containers-clean='docker rm $(docker ps -qa --filter status=exited)'
+alias containers-reset='docker rm -f $(docker ps -qa)'
+
 alias de='docker exec -it'
 alias di='docker images'
 alias dp='docker ps -a'
