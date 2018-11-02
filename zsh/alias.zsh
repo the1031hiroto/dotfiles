@@ -65,7 +65,6 @@ alias upgrade='brew update && brew upgrade && brew cleanup && brew leaves'
 alias cask='brew cask'
 
 alias e2e='yarn test:e2e'
-alias ss='EDITOR=atom bx rails s'
 
 alias ppp='echo -n `pwd` | pbcopy'
 alias j2y='json2yaml'
