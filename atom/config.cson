@@ -52,7 +52,6 @@
       selectToCopy: false
   "tree-view":
     alwaysOpenExisting: true
-    autoReveal: true
     focusOnReveal: false
     hideIgnoredNames: true
     squashDirectoryNames: true
