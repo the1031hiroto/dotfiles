@@ -9,8 +9,19 @@
     ]
     ignoredNames: [
       ".DS_Store"
+      ".idea"
+      ".git"
+      ".github"
+      ".keep"
+      ".nuxt"
+      "bin"
+      "coverage"
       "node_modules"
+      "log"
+      "logs"
+      "tmp"
     ]
+    openEmptyEditorOnStart: false
     packagesWithKeymapsDisabled: [
       "symbols-view"
     ]
