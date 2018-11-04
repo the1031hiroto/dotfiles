@@ -5,7 +5,6 @@
       "exception-reporting"
       "background-tips"
       "about"
-      "linter-flow"
     ]
     ignoredNames: [
       ".DS_Store"
