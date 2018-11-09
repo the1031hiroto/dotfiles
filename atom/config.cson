@@ -67,7 +67,8 @@
     squashDirectoryNames: true
   welcome:
     showOnStartup: false
-  whitespace: {}
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
 ".go.source":
   editor:
     softWrap: false
