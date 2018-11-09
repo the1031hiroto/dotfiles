@@ -37,6 +37,8 @@ chmod 400 .zshrc
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 brew bundle
+
+# brew bundle dump --file=/tmp/Brewfile && ksdiff /tmp/Brewfile ~/.dotfiles/Brewfile
 ```
 
 ### atom
