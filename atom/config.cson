@@ -5,6 +5,7 @@
       "exception-reporting"
       "background-tips"
       "about"
+      "welcome"
     ]
     ignoredNames: [
       ".DS_Store"
