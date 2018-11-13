@@ -9,6 +9,7 @@
     ]
     ignoredNames: [
       ".DS_Store"
+      ".*_history"
       ".idea"
       ".git"
       ".github"
