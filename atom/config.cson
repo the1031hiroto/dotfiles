@@ -17,7 +17,6 @@
       "bin"
       "coverage"
       "node_modules"
-      "log"
       "logs"
       "tmp"
     ]
