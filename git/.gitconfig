@@ -38,6 +38,7 @@
 	fm = fetch origin master:master
 	gg = grep --line-number --show-function --heading --break
 	mm = merge origin/master
+	lg = git log --graph
 	pf = push -f
 	re = reset --soft HEAD~
 	rh = reset --hard
